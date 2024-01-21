@@ -1,0 +1,14 @@
+$light-gray-row: #eaeaea;
+
+.body-rows-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+
+  > span:first-child {
+    margin-right: 15px;
+  }
+}

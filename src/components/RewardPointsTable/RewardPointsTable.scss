@@ -1,0 +1,73 @@
+$light-gray-row: #eaeaea;
+$dark-gray: #272727;
+
+table.reward-points-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid black;
+
+  caption {
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    border: 1px solid black;
+    border-bottom: none;
+    background-color: lightgray;
+    font-weight: bold;
+  }
+
+  th,
+  td {
+    border: 1px solid black;
+    padding: 4px;
+  }
+
+  th {
+    position: sticky;
+    top: 39px;
+    background-color: $dark-gray;
+    color: white;
+
+    &.number {
+      width: 5%;
+      max-width: 5%;
+    }
+    &.email {
+      width: 30%;
+      max-width: 30%;
+    }
+    &.no-trans {
+      width: 5%;
+      max-width: 5%;
+    }
+    &.month {
+      width: 10%;
+      max-width: 10%;
+    }
+    &.total {
+      width: 20%;
+      max-width: 20%;
+    }
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: $light-gray-row;
+  }
+
+  tbody tr:hover {
+    background-color: lightblue;
+  }
+
+  tfoot tr td {
+    padding: 10px;
+    select {
+      margin-left: 5px;
+    }
+  }
+}
+
+.simulate-errors {
+  button:not(:last-child) {
+    margin-right: 10px;
+  }
+}

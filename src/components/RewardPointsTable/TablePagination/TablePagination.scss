@@ -1,0 +1,9 @@
+.table-pagination {
+  > span:first-of-type {
+    display: inline-block;
+    text-align: center;
+    width: 60px;
+    max-width: 60px;
+    margin: 0 10px;
+  }
+}
