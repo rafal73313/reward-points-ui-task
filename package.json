@@ -1,8 +1,11 @@
 {
-  "name": "x005-react-daily-19.01.24",
+  "name": "reward-points-ui-task",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=16.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
