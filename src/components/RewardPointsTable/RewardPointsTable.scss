@@ -54,7 +54,7 @@ table.reward-points-table {
     background-color: $light-gray-row;
   }
 
-  tbody tr:hover {
+  tbody.table-body-with-data tr:hover {
     background-color: lightblue;
   }
 

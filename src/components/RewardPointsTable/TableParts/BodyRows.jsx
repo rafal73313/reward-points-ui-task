@@ -16,7 +16,7 @@ export const BodyRows = ({
   );
 
   return (
-    <tbody>
+    <tbody className="table-body-with-data">
       {isSuccess &&
         dataPerUser.map((item, index) => {
           const { email, pointsTotal, pointsEachMonth, noTransactions } = item;
