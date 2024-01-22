@@ -5,6 +5,7 @@
 - Jest
 - ESlint
 - Prettier
+- Node (tested on v19.8.1)
 
 **sample transactions dataset with reward points is contained inside `/public/data.json`**
 
