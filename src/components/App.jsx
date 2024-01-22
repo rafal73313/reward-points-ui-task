@@ -13,12 +13,10 @@ export const App = () => {
   const [data, status, , clearError] = useFetchTransactionData();
 
   return (
-    <>
-      <h2>Customer Reward Points by Charter</h2>
-      <ErrorBoundaryGlobal clearErrorGlobal={clearErrorGlobal} setErrorGlobal={setErrorGlobal}>
-        {hasErrorGlobal && <ErrorBoxGlobal clearError={clearError} />}
-        <RewardPointsTable data={data} status={status} />
-      </ErrorBoundaryGlobal>
-    </>
+    <ErrorBoundaryGlobal clearErrorGlobal={clearErrorGlobal} setErrorGlobal={setErrorGlobal}>
+      <h2>Customer Reward Points</h2>
+      {hasErrorGlobal && <ErrorBoxGlobal clearError={clearError} />}
+      <RewardPointsTable data={data} status={status} />
+    </ErrorBoundaryGlobal>
   );
 };

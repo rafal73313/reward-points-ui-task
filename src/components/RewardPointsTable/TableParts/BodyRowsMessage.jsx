@@ -1,5 +1,5 @@
 import { FETCH_STATUS } from '../../../hooks/useFetchTransactionData';
-import Spinner from '../../../assets/spinner.svg?react';
+import { SpinnerLoader } from '../../SpinnerLoader/SpinnerLoader';
 
 import './BodyRowsMessage.scss';
 
@@ -13,7 +13,7 @@ const RowMessage = ({ message, showSpinner }) => (
       <td colSpan="6">
         <div className="body-rows-message">
           <span>{message}</span>
-          <span>{showSpinner && <Spinner />}</span>
+          <span>{showSpinner && <SpinnerLoader />}</span>
         </div>
       </td>
     </tr>
