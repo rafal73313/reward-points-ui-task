@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { TablePagination } from '../tablePagination/TablePagination';
+import { TablePagination } from '../TablePagination/TablePagination';
 import { RowsPerPageSelector } from '../RowsPerPageSelector/RowsPerPageSelector';
 
 import './FooterWithPagination.scss';
